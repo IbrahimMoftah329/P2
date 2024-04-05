@@ -1,3 +1,9 @@
+/*
+CSCI335 Spring 2024
+Project 1
+Ibrahim Moftah
+*/
+
 #include "myList.hpp"
 
 void listMedian(const std::vector<int>* instructions) {
@@ -20,12 +26,11 @@ void listMedian(const std::vector<int>* instructions) {
                 auto it = sortedList.begin();
                 if (sortedList.size() % 2 == 0) {
                     // Even number of elements, median is lesser of the two middle elements
-                    auto it1 = std::next(it, sortedList.size() / 2);
-                    --it1;
-                    auto it2 = std::next(it, sortedList.size() / 2);
-                    median = std::min(*it1, *it2);
+                    std::advance(it, sortedList.size() / 2);
+                    --it;
+                    median = *it;
                     // Remove median from sortedList
-                    sortedList.erase(it1);
+                    sortedList.erase(it);
                 } else {
                     // Odd number of elements, median is middle element
                     std::advance(it, sortedList.size() / 2);

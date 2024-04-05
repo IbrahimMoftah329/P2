@@ -1,3 +1,9 @@
+/*
+CSCI335 Spring 2024
+Project 1
+Ibrahim Moftah
+*/
+
 #ifndef MYLIST_HPP
 #define MYLIST_HPP
 

@@ -1,3 +1,9 @@
+/*
+CSCI335 Spring 2024
+Project 1
+Ibrahim Moftah
+*/
+
 #include "myVector.hpp"
 
 void vectorMedian(const std::vector<int>* instructions) {
@@ -19,9 +25,7 @@ void vectorMedian(const std::vector<int>* instructions) {
                 int median;
                 if (sortedVector.size() % 2 == 0) {
                     // Even number of elements, median is lesser of the two middle elements
-                    int mid1 = sortedVector[sortedVector.size() / 2 - 1];
-                    int mid2 = sortedVector[sortedVector.size() / 2];
-                    median = std::min(mid1, mid2);
+                    median = sortedVector[sortedVector.size() / 2 - 1];
                 } else {
                     // Odd number of elements, median is middle element
                     median = sortedVector[sortedVector.size() / 2];
