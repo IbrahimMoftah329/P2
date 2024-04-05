@@ -44,4 +44,5 @@ void vectorMedian(const std::vector<int>* instructions) {
     for (int median : medians) {
         std::cout << median << " ";
     }
+    std::cout << std::endl;
 }

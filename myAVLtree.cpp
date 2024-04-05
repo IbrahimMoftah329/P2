@@ -406,7 +406,7 @@ void treeMedian(const std::vector<int>* instructions) {
                 large.insert(max);
             }
 
-            while (large.size() > small.size()) {
+            while (small.size() < large.size()) {
                 int min = large.findMin();
                 large.remove(min);
                 small.insert(min);
@@ -422,4 +422,5 @@ void treeMedian(const std::vector<int>* instructions) {
     for (int median : medians) {
         std::cout << median << " ";
     }
+    std::cout << std::endl;
 }

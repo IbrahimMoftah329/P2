@@ -25,7 +25,7 @@ int parseInstruction(const std::string& line) {
 
 int main() {
     // Open input file
-    std::ifstream inputFile("testinput.txt");
+    std::ifstream inputFile("input1.txt");
     if (!inputFile.is_open()) {
         std::cerr << "Error: Unable to open input file." << std::endl;
         return 1;
@@ -52,16 +52,10 @@ int main() {
     // You can pass this vector to your median-tracking methods for testing
 
     vectorMedian(&instructions);
-    std::cout << std::endl;
-    std::cout << std::endl;
     listMedian(&instructions);
-    std::cout << std::endl;
-    std::cout << std::endl;
     heapMedian(&instructions);
-    std::cout << std::endl;
-    std::cout << std::endl;
     treeMedian(&instructions);
-    std::cout << std::endl;
+    
 
     // Close the input file
     inputFile.close();
