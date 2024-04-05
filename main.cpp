@@ -61,6 +61,7 @@ int main() {
     std::cout << std::endl;
     std::cout << std::endl;
     treeMedian(&instructions);
+    std::cout << std::endl;
 
     // Close the input file
     inputFile.close();
