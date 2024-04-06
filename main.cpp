@@ -31,7 +31,7 @@ int parseInstruction(const std::string& line) {
 
 int main() {
     // Open input file
-    std::ifstream inputFile("input1.txt");
+    std::ifstream inputFile("input2.txt");
     if (!inputFile.is_open()) {
         std::cerr << "Error: Unable to open input file." << std::endl;
         return 1;
