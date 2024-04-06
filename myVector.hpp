@@ -1,6 +1,6 @@
 /*
 CSCI335 Spring 2024
-Project 1
+Project 2
 Ibrahim Moftah
 */
 
@@ -12,6 +12,11 @@ Ibrahim Moftah
 #include <algorithm>
 #include <chrono>
 
+/**
+ * Function to calculate median of a vector
+ * It takes a vector of instructions as input, where -1 indicates median calculation and other integers represent elements to be inserted
+ * print the calculated medians.
+ */
 void vectorMedian(const std::vector<int>* instructions);
 
 #endif

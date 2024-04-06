@@ -1,6 +1,6 @@
 /*
 CSCI335 Spring 2024
-Project 1
+Project 2
 Ibrahim Moftah
 */
 

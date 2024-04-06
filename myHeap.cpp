@@ -1,11 +1,16 @@
 /*
 CSCI335 Spring 2024
-Project 1
+Project 2
 Ibrahim Moftah
 */
 
 #include "myHeap.hpp"
 
+/**
+ * Function to calculate median of a heap
+ * It takes a vector of instructions as input, where -1 indicates median calculation and other integers represent elements to be inserted
+ * print the calculated medians.
+ */
 void heapMedian(const std::vector<int>* instructions) {
     if (instructions == nullptr) {
         std::cerr << "Invalid instructions pointer." << std::endl;

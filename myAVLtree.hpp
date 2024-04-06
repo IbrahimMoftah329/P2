@@ -1,6 +1,6 @@
 /*
 CSCI335 Spring 2024
-Project 1
+Project 2
 Ibrahim Moftah
 */
 
@@ -32,9 +32,16 @@ Ibrahim Moftah
 class AvlTree
 {
   public:
+    // Default constructor
     AvlTree();
-    AvlTree(const AvlTree &rhs);
-    AvlTree(AvlTree &&rhs);
+
+    // Copy constructor
+    AvlTree(const AvlTree& rhs);
+
+    // Move constructor
+    AvlTree(AvlTree&& rhs);
+
+    // Destructor
     ~AvlTree();
 
     /**
@@ -221,6 +228,11 @@ class AvlTree
 
 };
 
+/**
+ * Function to calculate median of a AVL tree
+ * It takes a vector of instructions as input, where -1 indicates median calculation and other integers represent elements to be inserted
+ * print the calculated medians.
+ */
 void treeMedian(const std::vector<int>* instructions);
 
 #endif

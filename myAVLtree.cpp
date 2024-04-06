@@ -1,22 +1,26 @@
 /*
 CSCI335 Spring 2024
-Project 1
+Project 2
 Ibrahim Moftah
 */
 
 #include "myAVLtree.hpp"
 
+// Default constructor
 AvlTree::AvlTree( ) : root{nullptr} { 
 }
 
-AvlTree::AvlTree(const AvlTree & rhs) : root{nullptr} {
+// Copy constructor
+AvlTree::AvlTree(const AvlTree& rhs) : root{nullptr} {
     root = clone(rhs.root);
 }
 
-AvlTree::AvlTree(AvlTree && rhs) : root{rhs.root} {
+// Move constructor
+AvlTree::AvlTree(AvlTree&& rhs) : root{rhs.root} {
     rhs.root = nullptr;
 }
 
+// Destructor
 AvlTree::~AvlTree( ) {
     makeEmpty( );
 }
@@ -370,6 +374,12 @@ int AvlTree::size() const {
     return countElements(root);
 }
 
+
+/**
+ * Function to calculate median of a AVL tree
+ * It takes a vector of instructions as input, where -1 indicates median calculation and other integers represent elements to be inserted
+ * print the calculated medians.
+ */
 void treeMedian(const std::vector<int>* instructions) {
     if (instructions == nullptr) {
         std::cerr << "Invalid instructions pointer." << std::endl;
