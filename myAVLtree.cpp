@@ -416,16 +416,14 @@ void treeMedian(const std::vector<int>* instructions) {
             }
 
             // Rebalance the containers if necessary
-            while (small.size() > large.size() + 1) {
-                int max = small.findMax();
-                small.remove(max);
-                large.insert(max);
-            }
-
-            while (small.size() < large.size()) {
+            if (small.size() < large.size()) {
                 int min = large.findMin();
                 large.remove(min);
                 small.insert(min);
+            } else if (small.size() > large.size() + 1) {
+                int max = small.findMax();
+                small.remove(max);
+                large.insert(max);
             }
         }
     }
