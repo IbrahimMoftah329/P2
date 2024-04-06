@@ -59,10 +59,10 @@ void listMedian(const std::vector<int>* instructions) {
     int t1 = std::chrono::duration <double, std::micro> (t1_end - t1_start).count();
     std::cout << "List method completed in " << t1 << " microseconds." << std::endl;
 
-    // Print the medians
-    for (int median : medians) {
-        std::cout << median << " ";
-    }
-    std::cout << std::endl;
+    // // Print the medians
+    // for (int median : medians) {
+    //     std::cout << median << " ";
+    // }
+    // std::cout << std::endl;
 }
 

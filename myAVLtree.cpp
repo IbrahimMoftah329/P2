@@ -432,9 +432,9 @@ void treeMedian(const std::vector<int>* instructions) {
     int t1 = std::chrono::duration <double, std::micro> (t1_end - t1_start).count();
     std::cout << "AVL tree method completed in " << t1 << " microseconds." << std::endl;
 
-    // Print the medians
-    for (int median : medians) {
-        std::cout << median << " ";
-    }
-    std::cout << std::endl;
+    // // Print the medians
+    // for (int median : medians) {
+    //     std::cout << median << " ";
+    // }
+    // std::cout << std::endl;
 }
