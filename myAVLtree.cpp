@@ -72,7 +72,7 @@ const int& AvlTree::findMax( ) const {
 /**
  * Returns true if x is found in the tree.
  */
-bool AvlTree::contains(const int & x) const {
+bool AvlTree::contains(const int &x) const {
     return contains(x, root);
 }
 
@@ -88,7 +88,7 @@ bool AvlTree::isEmpty( ) const {
  * Print the tree contents in sorted order.
  */
 void AvlTree::printTree( ) const {
-    if( isEmpty( ) )
+    if(isEmpty( ))
         std::cout << "Empty tree" << std::endl;
     else
         printTree(root);
@@ -104,21 +104,21 @@ void AvlTree::makeEmpty( ) {
 /**
  * Insert x into the tree; duplicates are ignored.
  */
-void AvlTree::insert( const int & x ) {
+void AvlTree::insert(const int &x) {
     insert(x, root);
 }
     
 /**
  * Insert x into the tree; duplicates are ignored.
  */
-void AvlTree::insert(int && x) {
-    insert(std::move( x ), root);
+void AvlTree::insert(int &&x) {
+    insert(std::move(x), root);
 }
     
 /**
  * Remove x from the tree. Nothing is done if x is not found.
  */
-void AvlTree::remove(const int & x) {
+void AvlTree::remove(const int &x) {
     remove(x, root);
 }
 
@@ -128,14 +128,14 @@ void AvlTree::remove(const int & x) {
  * t is the node that roots the subtree.
  * Set the new root of the subtree.
  */
-void AvlTree::insert(const int & x, AvlNode * & t) {
-    if(t == nullptr)
+void AvlTree::insert(const int &x, AvlNode* &t) {
+    if(t == nullptr) {
         t = new AvlNode{x, nullptr, nullptr};
-    else if(x < t->element)
+    } else if(x < t->element) {
         insert(x, t->left);
-    else if(t->element < x)
+    } else {
         insert(x, t->right);
-    
+    }
     balance( t );
 }
 
@@ -146,13 +146,13 @@ void AvlTree::insert(const int & x, AvlNode * & t) {
  * Set the new root of the subtree.
  */
 void AvlTree::insert(int&& x, AvlNode* &t) {
-    if(t == nullptr)
+    if(t == nullptr) {
         t = new AvlNode{std::move(x), nullptr, nullptr};
-    else if(x < t->element)
+    } else if(x < t->element) {
         insert(std::move(x), t->left);
-    else if(t->element < x)
+    } else {
         insert(std::move(x), t->right);
-    
+    }
     balance(t);
 }
     
