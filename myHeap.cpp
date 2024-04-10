@@ -26,7 +26,7 @@ void heapMedian(const std::vector<int>* instructions) {
     for (int instruction : *instructions) {
         if (instruction == -1) {
             if (small.empty()) {
-                std::cout << "No elements in the list." << std::endl;
+                std::cout << "No elements in the Heap." << std::endl;
             } else {
                 int median = small.top();
                 medians.push_back(median);

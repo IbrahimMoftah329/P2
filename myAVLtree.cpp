@@ -395,7 +395,7 @@ void treeMedian(const std::vector<int>* instructions) {
     for (int instruction : *instructions) {
         if (instruction == -1) {
             if (small.isEmpty()) {
-                std::cout << "No elements in the list." << std::endl;
+                std::cout << "No elements in the AVL Tree." << std::endl;
             } else {
                 int median = small.findMax();
                 medians.push_back(median);
