@@ -1,3 +1,7 @@
+/*
+Author: Ibrahim Moftah
+*/
+
 #ifndef MYLIST_HPP
 #define MYLIST_HPP
 
