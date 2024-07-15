@@ -1,4 +1,4 @@
-Project 2: ADT Implementation and Performance Comparison
+Project: ADT Implementation and Performance Comparison
 
 Objective
 In this project, you will implement an Abstract Data Type (ADT) with two operations: insert and pop_median. The ADT will be implemented in four different ways, and their performance will be compared.
