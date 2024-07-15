@@ -1,3 +1,7 @@
+/*
+Author: Ibrahim Moftah
+*/
+
 #include "myAVLtree.hpp"
 
 // Default constructor
