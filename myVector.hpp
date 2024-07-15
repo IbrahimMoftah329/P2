@@ -1,9 +1,3 @@
-/*
-CSCI335 Spring 2024
-Project 2
-Ibrahim Moftah
-*/
-
 #ifndef MY_VECTOR_HPP
 #define MY_VECTOR_HPP
 
