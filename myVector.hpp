@@ -1,3 +1,7 @@
+/*
+Author: Ibrahim Moftah
+*/
+
 #ifndef MY_VECTOR_HPP
 #define MY_VECTOR_HPP
 
