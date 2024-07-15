@@ -1,9 +1,3 @@
-/*
-CSCI335 Spring 2024
-Project 2
-Ibrahim Moftah
-*/
-
 #ifndef MYHEAP_HPP
 #define MYHEAP_HPP
 
